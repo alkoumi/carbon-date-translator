@@ -1,0 +1,26 @@
+{	
+
+    "name": "alkoumi/carbon-date-translator",
+
+	"description": "a package to translate carbon date difference  'diffForHumans()' to arabic language.",
+
+	"authors": [
+		{
+		"name": "Mohammad Alkoumi",
+		"email": "komy66@gmail.com"
+		}
+	],
+
+    "autoload": {
+        "psr-4": {
+            "Alkoumi\\CarbonDateTranslator\\": "src/"
+        }
+    },
+
+    "require": {
+        "php": ">=5.5.9",
+        "nesbot/carbon": "*"
+    },
+
+	"license": "MIT"
+}
