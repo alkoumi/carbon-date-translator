@@ -1,6 +1,6 @@
 {
   "name": "alkoumi/carbon-date-translator",
-  "description": "a package to translate carbon date difference 'diffForHumans()' to arabic language. to loook like [منذ ٥ دقائق] , [بعد سبع ساعات]",
+  "description": "a package to translate carbon date to our Amazing 💝 arabic language. to look like [منذ ٥ دقائق] , [بعد سبع ساعات]",
   "keywords": [
     "carbon",
     "date",
@@ -35,5 +35,6 @@
         "php": ">=5.5.9",
         "nesbot/carbon": "*"
     },
-  "minimum-stability": "stable"
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
