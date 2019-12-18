@@ -1,6 +1,6 @@
 {
   "name": "alkoumi/carbon-date-translator",
-  "description": "a package to translate carbon date difference  'diffForHumans()' to arabic language.",
+  "description": "a package to translate carbon date difference 'diffForHumans()' to arabic language. to loook like [منذ ٥ دقائق] , [بعد سبع ساعات]",
   "keywords": [
     "carbon",
     "date",
