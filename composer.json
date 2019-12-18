@@ -34,5 +34,6 @@
   "require": {
         "php": ">=5.5.9",
         "nesbot/carbon": "*"
-    }
+    },
+  "minimum-stability": "dev"
 }
