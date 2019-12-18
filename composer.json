@@ -35,7 +35,6 @@
         "php": ">=5.5.9",
         "nesbot/carbon": "*"
     },
-  "config": {
-    "sort-packages": true
-  }
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
