@@ -1,26 +1,41 @@
-{	
-
-    "name": "alkoumi/carbon-date-translator",
-
-	"description": "a package to translate carbon date difference  'diffForHumans()' to arabic language.",
-
-	"authors": [
+{
+  "name": "alkoumi/carbon-date-translator",
+  "description": "a package to translate carbon date difference  'diffForHumans()' to arabic language.",
+  "keywords": [
+    "carbon",
+    "date",
+    "translator",
+    "carbon-date",
+    "date-translator",
+    "carbon-date-translator",
+    "arabic",
+    "arabic-date-translator"
+  ],
+  "homepage": "https://be.net/komy",
+  "license": "MIT",
+  "authors": [
 		{
 		"name": "Mohammad Alkoumi",
 		"email": "komy66@gmail.com"
 		}
 	],
-
-    "autoload": {
-        "psr-4": {
-            "Alkoumi\\CarbonDateTranslator\\": "src/"
-        }
-    },
-
-    "require": {
+  "autoload": {
+      "psr-4": {
+          "Alkoumi\\CarbonDateTranslator\\": "src/"
+      }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Alkoumi\\CarbonDateTranslator\\CarbonDateTranslatorServiceProvider"
+      ]
+    }
+  },
+  "require": {
         "php": ">=5.5.9",
         "nesbot/carbon": "*"
     },
-
-	"license": "MIT"
+  "config": {
+    "sort-packages": true
+  }
 }
