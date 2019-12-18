@@ -1,6 +1,6 @@
 {
   "name": "alkoumi/carbon-date-translator",
-  "description": "a package to translate carbon date to our Amazing 💝 arabic language. to look like [منذ ٥ دقائق] , [بعد سبع ساعات]",
+  "description": "a package to translate carbon date to our Amazing 💝 Arabic language even the future dates. to look like [منذ ٥ دقائق] , [بعد سبع ساعات]",
   "keywords": [
     "carbon",
     "date",
@@ -15,7 +15,7 @@
   "license": "MIT",
   "authors": [
 		{
-		"name": "Mohammad Alkoumi",
+		"name": "Mohammed Alkoumi",
 		"email": "komy66@gmail.com"
 		}
 	],
