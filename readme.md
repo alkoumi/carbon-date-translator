@@ -1,6 +1,6 @@
 # Carbon Date Arabic Translator الترجمة الفعلية للتوايخ باللغة العربية 
 
-a package to translate carbon date to our Amazing 💝 Arabic language even the future dates. to look like [منذ ٥ دقائق] , [بعد سبع ساعات] 
+Laravel package to translate carbon date to our Amazing 💝 Arabic language even the future dates. to look like [منذ ٥ دقائق] , [بعد سبع ساعات] 
 
 ## Installation Up to Laravel 6
 
