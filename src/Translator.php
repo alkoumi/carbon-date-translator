@@ -12,12 +12,12 @@ class Translator{
     // convert s given date to arabic string
     public static function inArabic($theDate){
 
+        // Add Translate to Past Dates
         if ($theDate < Carbon::now()){
             //START
             $date = $theDate->diffForHumans();
 
             $dateArray = explode(" ", $date);
-
 
             //$dateArray[0] is number, $dateArray[1] is the time period , $dateArray[2] is the word ago
 
@@ -172,11 +172,11 @@ class Translator{
             return $arPeriod;
 
         }else{
-           // START
+
+           // Add Translate to future Dates
             $date = $theDate->diffForHumans();
 
             $dateArray = explode(" ", $date);
-
 
             //$dateArray[0] is number, $dateArray[1] is the time period , $dateArray[2] is the word ago
 

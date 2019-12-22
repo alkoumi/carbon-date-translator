@@ -1,4 +1,4 @@
-# Carbon Date Arabic Translator الترجمة الفعلية للتوايخ باللغة العربية 
+# Laravel Carbon Date Arabic Translator الترجمة الفعلية للتوايخ باللغة العربية 
 
 Laravel package to translate carbon date to our Amazing 💝 Arabic language even the future dates. to look like [منذ ٥ دقائق] , [بعد سبع ساعات] 
 
@@ -20,10 +20,8 @@ The service provider will automatically get registered. Or you may manually add 
 Simply pass an instance of carbon date to the method TransDate::inArabic()
 
 ```php
-
 	$row = App\User::first();
 	$differenceInArabic = TransDate::inArabic($row->created_at);
-
         // Result1 => "منذ سبع ساعات"
         // Result2 => "بعد سبع ساعات"
 ```
