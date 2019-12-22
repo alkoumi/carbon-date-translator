@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\Config;
 /* 
  * this class translates carbon date difference to arabic 
  */
-class Translator{
+class TransDate
+{
     // convert s given date to arabic string
     public static function inArabic($theDate){
 

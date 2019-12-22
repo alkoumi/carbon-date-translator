@@ -15,7 +15,7 @@ class CarbonDateTranslatorServiceProvider extends ServiceProvider
     public function boot()
     {
         //create alias
-        AliasLoader::getInstance()->alias("TransDate", Translator::class);
+        AliasLoader::getInstance()->alias("TransDate", TransDate::class);
     }
 
     /**
