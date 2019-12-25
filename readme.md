@@ -1,4 +1,4 @@
-# Laravel Carbon Date Arabic Translator الترجمة الفعلية للتوايخ باللغة العربية 
+# Laravel Carbon Date Arabic Translator الترجمة الفعلية للتوايخ باللغة العربية
 
 [![Latest Stable Version](https://poser.pugx.org/alkoumi/carbon-date-translator/v/stable)](https://packagist.org/packages/alkoumi/carbon-date-translator)
 [![Total Downloads](https://poser.pugx.org/alkoumi/carbon-date-translator/downloads)](https://packagist.org/packages/alkoumi/carbon-date-translator)
@@ -19,11 +19,8 @@ The service provider will automatically get registered. Or you may manually add 
         // ...
         Alkoumi\CarbonDateTranslator\CarbonDateTranslatorServiceProvider::class,
     ];
-
 ## Usage
-
 Simply pass an instance of carbon `$date` to the method `TransDate::inArabic($date)`
-
 ```php
 	$row = App\User::first();
 	$differenceInArabic = TransDate::inArabic($row->created_at);
