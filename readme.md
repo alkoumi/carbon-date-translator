@@ -1,8 +1,5 @@
 # Laravel Carbon Date Arabic Translator الترجمة الفعلية للتوايخ باللغة العربية
 
-[![Latest Version on Packagist][ico-version]][link-releases]
-
-https://github.styleci.io/repos/218074760
 
 Laravel package to translate carbon date to our Amazing 💝 Arabic language even the future dates. to look like [منذ ٥ دقائق] , [بعد سبع ساعات] 
 
