@@ -1,5 +1,6 @@
 # Laravel Carbon Date Arabic Translator الترجمة الفعلية للتوايخ باللغة العربية
 
+[![Latest Version on Packagist][ico-version]][link-releases]
 
 https://github.styleci.io/repos/218074760
 
