@@ -2,8 +2,8 @@
 
 namespace Alkoumi\CarbonDateTranslator;
 
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;
+use Illuminate\Support\ServiceProvider;
 
 class CarbonDateTranslatorServiceProvider extends ServiceProvider
 {
@@ -15,7 +15,7 @@ class CarbonDateTranslatorServiceProvider extends ServiceProvider
     public function boot()
     {
         //create alias
-        AliasLoader::getInstance()->alias("TransDate", TransDate::class);
+        AliasLoader::getInstance()->alias('TransDate', TransDate::class);
     }
 
     /**
