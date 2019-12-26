@@ -4,7 +4,6 @@
 [![Total Downloads](https://poser.pugx.org/alkoumi/carbon-date-translator/downloads)](https://packagist.org/packages/alkoumi/carbon-date-translator)
 [![License](https://poser.pugx.org/alkoumi/carbon-date-translator/license)](https://packagist.org/packages/alkoumi/carbon-date-translator)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/alkoumi/carbon-date-translator/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/alkoumi/carbon-date-translator/?branch=master)
-<a href="https://github.styleci.io/repos/218074760"><img src="https://github.styleci.io/repos/218074760/shield?branch=master" alt="StyleCI"></a>
 [![Build Status](https://scrutinizer-ci.com/g/alkoumi/carbon-date-translator/badges/build.png?b=master)](https://scrutinizer-ci.com/g/alkoumi/carbon-date-translator/build-status/master)
 [![Code Intelligence Status](https://scrutinizer-ci.com/g/alkoumi/carbon-date-translator/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 
