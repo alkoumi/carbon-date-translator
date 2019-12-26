@@ -102,16 +102,13 @@
             if ($period == 1)
             {
                 return $zaman."ثانية واحدة";
-            }
-            elseif ($period == 2)
+            } elseif ($period == 2)
             {
                 return $zaman."ثانيتين";
-            }
-            elseif ($period >= 3 && $period <= 10)
+            } elseif ($period >= 3 && $period <= 10)
             {
                 return $zaman.$period." ثواني";
-            }
-            else
+            } else
             {
                 return $zaman.$period." ثانية";
             }
@@ -122,16 +119,13 @@
             if ($period == 1)
             {
                 return $zaman."دقيقة واحدة";
-            }
-            elseif ($period == 2)
+            } elseif ($period == 2)
             {
                 return $zaman."دقيقتين";
-            }
-            elseif ($period >= 3 && $period <= 10)
+            } elseif ($period >= 3 && $period <= 10)
             {
                 return $zaman.$period." دقائق";
-            }
-            else
+            } else
             {
                 return $zaman.$period." دقيقة";
             }
@@ -142,16 +136,13 @@
             if ($period == 1)
             {
                 return $zaman."ساعة";
-            }
-            elseif ($period == 2)
+            } elseif ($period == 2)
             {
                 return $zaman."ساعتين";
-            }
-            elseif ($period >= 3 && $period <= 10)
+            } elseif ($period >= 3 && $period <= 10)
             {
                 return $zaman.$period." ساعات";
-            }
-            else
+            } else
             {
                 return $zaman.$period." ساعة";
             }
@@ -162,16 +153,13 @@
             if ($period == 1)
             {
                 return $zaman." يوم";
-            }
-            elseif ($period == 2)
+            } elseif ($period == 2)
             {
                 return $zaman."يومين";
-            }
-            elseif ($period >= 3 && $period <= 10)
+            } elseif ($period >= 3 && $period <= 10)
             {
                 return $zaman.$period." أيام";
-            }
-            else
+            } else
             {
                 return $zaman.$period." يوم";
             }
@@ -182,16 +170,13 @@
             if ($period == 1)
             {
                 return $zaman." أسبوع";
-            }
-            elseif ($period == 2)
+            } elseif ($period == 2)
             {
                 return $zaman." أسبوعين";
-            }
-            elseif ($period >= 3 && $period <= 10)
+            } elseif ($period >= 3 && $period <= 10)
             {
                 return $zaman.$period." أسابيع";
-            }
-            else
+            } else
             {
                 return $zaman.$period." أسبوع";
             }
@@ -202,16 +187,13 @@
             if ($period == 1)
             {
                 return $zaman."شهر";
-            }
-            elseif ($period == 2)
+            } elseif ($period == 2)
             {
                 return $zaman." شهرين";
-            }
-            elseif ($period >= 3 && $period <= 10)
+            } elseif ($period >= 3 && $period <= 10)
             {
                 return $zaman.$period." شهور";
-            }
-            else
+            } else
             {
                 return $zaman.$period." شهر";
             }
@@ -222,16 +204,13 @@
             if ($period == 1)
             {
                 return $zaman."سنة";
-            }
-            elseif ($period == 2)
+            } elseif ($period == 2)
             {
                 return $zaman." سنتين";
-            }
-            elseif ($period >= 3 && $period <= 10)
+            } elseif ($period >= 3 && $period <= 10)
             {
                 return $zaman.$period." سنوات";
-            }
-            else
+            } else
             {
                 return $zaman.$period." سنة";
             }
