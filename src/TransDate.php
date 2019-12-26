@@ -23,16 +23,13 @@
                 if($dateArray[0] == 1)
                 {
                     return $zaman."ثانية واحدة";
-                }
-                elseif($dateArray[0] == 2)
+                } elseif($dateArray[0] == 2)
                 {
                     return $zaman. "ثانيتين";
-                }
-                elseif($dateArray[0] >= 3 && $dateArray[0] <= 10  )
+                } elseif($dateArray[0] >= 3 && $dateArray[0] <= 10  )
                 {
                     return $zaman. $dateArray[0] . " ثواني";
-                }
-                else
+                } else
                 {
                     return $zaman.  $dateArray[0] . " ثانية";
                 }
@@ -43,16 +40,13 @@
                 if($dateArray[0] == 1)
                 {
                     return $zaman."دقيقة واحدة";
-                }
-                elseif($dateArray[0] == 2)
+                } elseif($dateArray[0] == 2)
                 {
                     return $zaman. "دقيقتين";
-                }
-                elseif($dateArray[0] >= 3 && $dateArray[0] <= 10  )
+                } elseif($dateArray[0] >= 3 && $dateArray[0] <= 10  )
                 {
                     return $zaman. $dateArray[0] . " دقائق";
-                }
-                else
+                } else
                 {
                     return $zaman.  $dateArray[0] . " دقيقة";
                 }
@@ -63,16 +57,13 @@
                 if($dateArray[0] == 1)
                 {
                     return $zaman."ساعة";
-                }
-                elseif($dateArray[0] == 2)
+                } elseif($dateArray[0] == 2)
                 {
                     return $zaman. "ساعتين";
-                }
-                elseif($dateArray[0] >= 3 && $dateArray[0] <= 10  )
+                } elseif($dateArray[0] >= 3 && $dateArray[0] <= 10  )
                 {
                     return $zaman. $dateArray[0] . " ساعات";
-                }
-                else
+                } else
                 {
                     return $zaman.  $dateArray[0] . " ساعة";
                 }
@@ -83,16 +74,13 @@
                 if($dateArray[0] == 1)
                 {
                     return $zaman." يوم";
-                }
-                elseif($dateArray[0] == 2)
+                } elseif($dateArray[0] == 2)
                 {
                     return $zaman. "يومين";
-                }
-                elseif($dateArray[0] >= 3 && $dateArray[0] <= 10  )
+                } elseif($dateArray[0] >= 3 && $dateArray[0] <= 10  )
                 {
                     return $zaman. $dateArray[0] . " أيام";
-                }
-                else
+                } else
                 {
                     return $zaman.  $dateArray[0] . " يوم";
                 }
@@ -103,16 +91,13 @@
                 if($dateArray[0] == 1)
                 {
                     return $zaman." أسبوع";
-                }
-                elseif($dateArray[0] == 2)
+                } elseif($dateArray[0] == 2)
                 {
                     return $zaman. " أسبوعين";
-                }
-                elseif($dateArray[0] >= 3 && $dateArray[0] <= 10  )
+                } elseif($dateArray[0] >= 3 && $dateArray[0] <= 10  )
                 {
                     return $zaman. $dateArray[0] . " أسابيع";
-                }
-                else
+                } else
                 {
                     return $zaman.  $dateArray[0] . " أسبوع";
                 }
@@ -123,16 +108,13 @@
                 if($dateArray[0] == 1)
                 {
                     return $zaman."شهر";
-                }
-                elseif($dateArray[0] == 2)
+                } elseif($dateArray[0] == 2)
                 {
                     return $zaman. " شهرين";
-                }
-                elseif($dateArray[0] >= 3 && $dateArray[0] <= 10  )
+                } elseif($dateArray[0] >= 3 && $dateArray[0] <= 10  )
                 {
                     return $zaman. $dateArray[0] . " شهور";
-                }
-                else
+                } else
                 {
                     return $zaman.  $dateArray[0] . " شهر";
                 }
@@ -143,16 +125,13 @@
                 if($dateArray[0] == 1)
                 {
                     return $zaman."سنة";
-                }
-                elseif($dateArray[0] == 2)
+                } elseif($dateArray[0] == 2)
                 {
                     return $zaman. " سنتين";
-                }
-                elseif($dateArray[0] >= 3 && $dateArray[0] <= 10  )
+                } elseif($dateArray[0] >= 3 && $dateArray[0] <= 10  )
                 {
                     return $zaman. $dateArray[0] . " سنوات";
-                }
-                else
+                } else
                 {
                     return $zaman.  $dateArray[0] . " سنة";
                 }
