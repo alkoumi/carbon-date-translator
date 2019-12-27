@@ -1,6 +1,6 @@
 <?php
 
-    namespace Alkoumi\CarbonDateTranslator;
+namespace Alkoumi\CarbonDateTranslator;
 
     use Carbon\Carbon;
     use Illuminate\Support\Str;
@@ -192,11 +192,12 @@
         protected function TransNumbers($value)
         {
             if (is_string($value)) {
-                $arabic_eastern = array('٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩');
-                $arabic_western = array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9');
+                $arabic_eastern = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
+                $arabic_western = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+
                 return str_replace($arabic_western, $arabic_eastern, $value);
             }
+
             return $value;
         }
-
     }
