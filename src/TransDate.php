@@ -1,6 +1,6 @@
 <?php
 
-namespace Alkoumi\CarbonDateTranslator;
+    namespace Alkoumi\CarbonDateTranslator;
 
     use Carbon\Carbon;
     use Illuminate\Support\Str;
@@ -19,6 +19,7 @@ namespace Alkoumi\CarbonDateTranslator;
             //$period is number, $dateArray[1] is the time $dateArray[0] , $dateArray[2] is the word ago
             $time = $dateArray[1];
             $period = $dateArray[0];
+            //$dateArray[0] >= 3 ?  $period = (new self)->TransNumbers($dateArray[0]) : $period = $dateArray[0];
             if ((new self())->isSecond($time)) {
                 return (new self())->handelSeconds($period, $zaman);
             }
@@ -99,15 +100,14 @@ namespace Alkoumi\CarbonDateTranslator;
 
         public function handelSeconds($period, $zaman)
         {
-            // handl seconds
             if ($period == 1) {
                 return $zaman.'ثانية واحدة';
             } elseif ($period == 2) {
                 return $zaman.'ثانيتين';
             } elseif ($period >= 3 && $period <= 10) {
-                return $zaman.$period.' ثواني';
+                return $zaman.$this->TransNumbers($period).' ثواني';
             } else {
-                return $zaman.$period.' ثانية';
+                return $zaman.$this->TransNumbers($period).' ثانية';
             }
         }
 
@@ -118,9 +118,9 @@ namespace Alkoumi\CarbonDateTranslator;
             } elseif ($period == 2) {
                 return $zaman.'دقيقتين';
             } elseif ($period >= 3 && $period <= 10) {
-                return $zaman.$period.' دقائق';
+                return $zaman.$this->TransNumbers($period).' دقائق';
             } else {
-                return $zaman.$period.' دقيقة';
+                return $zaman.$this->TransNumbers($period).' دقيقة';
             }
         }
 
@@ -131,9 +131,9 @@ namespace Alkoumi\CarbonDateTranslator;
             } elseif ($period == 2) {
                 return $zaman.'ساعتين';
             } elseif ($period >= 3 && $period <= 10) {
-                return $zaman.$period.' ساعات';
+                return $zaman.$this->TransNumbers($period).' ساعات';
             } else {
-                return $zaman.$period.' ساعة';
+                return $zaman.$this->TransNumbers($period).' ساعة';
             }
         }
 
@@ -144,9 +144,9 @@ namespace Alkoumi\CarbonDateTranslator;
             } elseif ($period == 2) {
                 return $zaman.'يومين';
             } elseif ($period >= 3 && $period <= 10) {
-                return $zaman.$period.' أيام';
+                return $zaman.$this->TransNumbers($period).' أيام';
             } else {
-                return $zaman.$period.' يوم';
+                return $zaman.$this->TransNumbers($period).' يوم';
             }
         }
 
@@ -157,9 +157,9 @@ namespace Alkoumi\CarbonDateTranslator;
             } elseif ($period == 2) {
                 return $zaman.' أسبوعين';
             } elseif ($period >= 3 && $period <= 10) {
-                return $zaman.$period.' أسابيع';
+                return $zaman.$this->TransNumbers($period).' أسابيع';
             } else {
-                return $zaman.$period.' أسبوع';
+                return $zaman.$this->TransNumbers($period).' أسبوع';
             }
         }
 
@@ -170,9 +170,9 @@ namespace Alkoumi\CarbonDateTranslator;
             } elseif ($period == 2) {
                 return $zaman.' شهرين';
             } elseif ($period >= 3 && $period <= 10) {
-                return $zaman.$period.' شهور';
+                return $zaman.$this->TransNumbers($period).' شهور';
             } else {
-                return $zaman.$period.' شهر';
+                return $zaman.$this->TransNumbers($period).' شهر';
             }
         }
 
@@ -183,9 +183,20 @@ namespace Alkoumi\CarbonDateTranslator;
             } elseif ($period == 2) {
                 return $zaman.' سنتين';
             } elseif ($period >= 3 && $period <= 10) {
-                return $zaman.$period.' سنوات';
+                return $zaman.$this->TransNumbers($period).' سنوات';
             } else {
-                return $zaman.$period.' سنة';
+                return $zaman.$this->TransNumbers($period).' سنة';
             }
         }
+
+        protected function TransNumbers($value)
+        {
+            if (is_string($value)) {
+                $arabic_eastern = array('٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩');
+                $arabic_western = array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9');
+                return str_replace($arabic_western, $arabic_eastern, $value);
+            }
+            return $value;
+        }
+
     }
